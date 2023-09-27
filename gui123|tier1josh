@@ -1,5 +1,5 @@
 --[[
-  UI lib made by bungie#0001
+  UI lib made by tier1josh | jr2shiesty
   
   - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
     problem with other people using it, please just make sure you message me and ask me before using.
@@ -774,7 +774,7 @@ function library:Introduction()
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
-    xsx.Name = "0Comp.lua"
+    xsx.Name = ".lua"
     xsx.Parent = background
     xsx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     xsx.BackgroundTransparency = 1.000
