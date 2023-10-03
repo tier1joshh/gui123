@@ -771,7 +771,6 @@ function library:Introduction()
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
     hashLogo.Image = "http://www.roblox.com/asset/?id=14954527939"
-    hashLogo.ImageColor3 = Color3.fromRGB(227, 115, 131)
     hashLogo.ImageTransparency = 1
     
     xsx.Name = ".lua"
