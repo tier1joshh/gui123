@@ -749,16 +749,7 @@ function library:Introduction()
     barLayout.Parent = barFolder
     barLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     barLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    
-    hashLogo.Name = ".lua"
-    hashLogo.Parent = background
-    hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
-    hashLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    hashLogo.BackgroundTransparency = 1.000
-    hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    hashLogo.Size = UDim2.new(0, 150, 0, 150)
-    hashLogo.Visible = true
-    hashLogo.Image = "http://www.roblox.com/asset/?id=14954527939"
+  
     
     
     xsx.Name = ".lua"
