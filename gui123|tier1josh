@@ -681,7 +681,86 @@ function library:Introduction()
         end
     end
 
-
+    CreateTween("introduction",0.175)
+    local introduction = Instance.new("ScreenGui")
+    local edge = Instance.new("Frame")
+    local edgeCorner = Instance.new("UICorner")
+    local background = Instance.new("Frame")
+    local backgroundGradient = Instance.new("UIGradient")
+    local backgroundCorner = Instance.new("UICorner")
+    local barFolder = Instance.new("Folder")
+    local bar = Instance.new("Frame")
+    local barCorner = Instance.new("UICorner")
+    local barLayout = Instance.new("UIListLayout")
+    local xsxLogo = Instance.new("ImageLabel")
+    local hashLogo = Instance.new("ImageLabel")
+    local xsx = Instance.new("TextLabel")
+    local text = Instance.new("TextLabel")
+    local pageLayout = Instance.new("UIListLayout")
+    
+    introduction.Name = "introduction"
+    introduction.Parent = CoreGuiService
+    introduction.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+    edge.Name = "edge"
+    edge.Parent = introduction
+    edge.AnchorPoint = Vector2.new(0.5, 0.5)
+    edge.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+    edge.BackgroundTransparency = 1
+    edge.Position = UDim2.new(0.511773348, 0, 0.5, 0)
+    edge.Size = UDim2.new(0, 300, 0, 308)
+    
+    edgeCorner.CornerRadius = UDim.new(0, 2)
+    edgeCorner.Name = "edgeCorner"
+    edgeCorner.Parent = edge
+    
+    background.Name = "background"
+    background.Parent = edge
+    background.AnchorPoint = Vector2.new(0.5, 0.5)
+    background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    background.BackgroundTransparency = 1
+    background.ClipsDescendants = true
+    background.Position = UDim2.new(0.5, 0, 0.5, 0)
+    background.Size = UDim2.new(0, 298, 0, 306)
+    
+    backgroundGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 28))}
+    backgroundGradient.Rotation = 90
+    backgroundGradient.Name = "backgroundGradient"
+    backgroundGradient.Parent = background
+    
+    backgroundCorner.CornerRadius = UDim.new(0, 2)
+    backgroundCorner.Name = "backgroundCorner"
+    backgroundCorner.Parent = background
+    
+    barFolder.Name = "barFolder"
+    barFolder.Parent = background
+    
+    bar.Name = "bar"
+    bar.Parent = barFolder
+    bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
+    bar.BackgroundTransparency = 0.200
+    bar.Size = UDim2.new(0, 0, 0, 1)
+    
+    barCorner.CornerRadius = UDim.new(0, 2)
+    barCorner.Name = "barCorner"
+    barCorner.Parent = bar
+    
+    barLayout.Name = "barLayout"
+    barLayout.Parent = barFolder
+    barLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    barLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    
+    hashLogo.Name = ".lua"
+    hashLogo.Parent = background
+    hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
+    hashLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    hashLogo.BackgroundTransparency = 1.000
+    hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
+    hashLogo.Size = UDim2.new(0, 150, 0, 150)
+    hashLogo.Visible = true
+    hashLogo.Image = "http://www.roblox.com/asset/?id=14954527939"
+    
+    
     xsx.Name = ".lua"
     xsx.Parent = background
     xsx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
